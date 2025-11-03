@@ -1,0 +1,175 @@
+/* ---------- Global Styles ---------- */
+body {
+    font-family: "Wald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* ---------- Scorecard Container ---------- */
+.scorecard {
+    width: fit-content;
+    max-width: 90%;
+    align-items: center;
+    text-align: center;
+    margin: 100px auto;
+    justify-content: space-between;
+    background-color: rgb(4, 4, 20);
+    border-radius: 8px;
+    padding: 20px 10px;
+    box-shadow: 10px 14px 16px rgba(7, 8, 7, 0.5);
+}
+
+/* ---------- Column Section ---------- */
+.coloum {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 50px;
+    margin: 20px 2px;
+}
+
+.coloum-row {
+    padding: 0 20px;
+}
+
+/* ---------- Live Score ---------- */
+.live-score {
+    width: 50px;
+    height: 20px;
+    background-color: wheat;
+}
+
+/* ---------- Buttons ---------- */
+.button-group {
+    display: flex;
+    gap: 5px;
+    padding-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-score,
+.guest-score {
+    background-color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn {
+    border: 2px solid white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: cadetblue;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5fa9aa;
+}
+
+/* ---------- Text Styles ---------- */
+.h-text {
+    color: aliceblue;
+}
+
+.main-title {
+    color: aliceblue;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* ---------- Timer ---------- */
+#timer {
+    display: flex;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* 📱 Mobile Devices (max 600px) */
+@media (max-width: 600px) {
+    .scorecard {
+        width: 95%;
+        padding: 15px;
+        margin-top: 60px;
+    }
+
+    .coloum {
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 15px;
+    }
+
+    .home-score,
+    .guest-score {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+
+    .main-title {
+        font-size: 1.2rem;
+    }
+
+    #timer {
+        flex-direction: row;
+        gap: 5px;
+    }
+}
+
+/* 💻 Tablets (600px – 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .scorecard {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .coloum {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .home-score,
+    .guest-score {
+        padding: 12px 35px;
+    }
+
+    .main-title {
+        font-size: 1.4rem;
+    }
+}
+
+/* 🖥️ Large Screens (992px+) */
+@media (min-width: 993px) {
+    .scorecard {
+        width: fit-content;
+    }
+
+    .coloum {
+        gap: 30px;
+    }
+}

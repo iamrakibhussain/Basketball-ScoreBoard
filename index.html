@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasketBall ScoreCard!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="scorecard">
+        <h1 class="main-title">BasketBall ScoreCard!</h1>
+        <div class="coloum">
+            <div class="coloum-row">
+                <h1 class="h-text">HOME</h1>
+                <div class="home-score" id="homescorebox">0</div>
+                <div class="button-group">
+                    <button class="btn" onclick="homescore1()">+1</button>
+                    <button class="btn" onclick="homescore2()">+2</button>
+                    <button class="btn" onclick="homescore3()">+3</button>
+                </div>
+            </div>
+            <div class="coloum-row">
+                <h1 class="h-text">GUEST</h1>
+                <div class="guest-score" id="guestscorebox">0</div>
+                <div class="button-group">
+                    <button class="btn" onclick="guestscore1()">+1</button>
+                    <button class="btn" onclick="guestscore2()">+2</button>
+                    <button class="btn" onclick="guestscore3()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div id="timer">
+            <h2>Match Time:</h2>
+            <span id="hours">00</span> :
+            <span id="minutes">00</span> :
+            <span id="seconds">00</span>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
