@@ -1,4 +1,3 @@
-/* ---------- Global Styles ---------- */
 body {
     font-family: "Wald", sans-serif;
     font-optical-sizing: auto;
@@ -6,10 +5,9 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #111827;
 }
 
-/* ---------- Scorecard Container ---------- */
 .scorecard {
     width: fit-content;
     max-width: 90%;
@@ -17,13 +15,14 @@ body {
     text-align: center;
     margin: 100px auto;
     justify-content: space-between;
-    background-color: rgb(4, 4, 20);
+    background: linear-gradient(145deg, #222, #444);
+    border: 2px solid #ff3333;
+
     border-radius: 8px;
     padding: 20px 10px;
     box-shadow: 10px 14px 16px rgba(7, 8, 7, 0.5);
 }
 
-/* ---------- Column Section ---------- */
 .coloum {
     display: flex;
     justify-content: center;
@@ -38,14 +37,12 @@ body {
     padding: 0 20px;
 }
 
-/* ---------- Live Score ---------- */
 .live-score {
     width: 50px;
     height: 20px;
     background-color: wheat;
 }
 
-/* ---------- Buttons ---------- */
 .button-group {
     display: flex;
     gap: 5px;
@@ -79,7 +76,6 @@ body {
     background-color: #5fa9aa;
 }
 
-/* ---------- Text Styles ---------- */
 .h-text {
     color: aliceblue;
 }
@@ -91,7 +87,6 @@ body {
     font-size: 1.5rem;
 }
 
-/* ---------- Timer ---------- */
 #timer {
     display: flex;
     text-align: center;
@@ -101,9 +96,7 @@ body {
     gap: 10px;
 }
 
-/* ---------- RESPONSIVE DESIGN ---------- */
 
-/* 📱 Mobile Devices (max 600px) */
 @media (max-width: 600px) {
     .scorecard {
         width: 95%;
@@ -138,7 +131,6 @@ body {
     }
 }
 
-/* 💻 Tablets (600px – 992px) */
 @media (min-width: 601px) and (max-width: 992px) {
     .scorecard {
         width: 85%;
@@ -163,7 +155,6 @@ body {
     }
 }
 
-/* 🖥️ Large Screens (992px+) */
 @media (min-width: 993px) {
     .scorecard {
         width: fit-content;
